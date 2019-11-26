@@ -1,0 +1,12 @@
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\bin\Release\Magrathea.exe
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\bin\Release\Magrathea.pdb
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\ResolveAssemblyReference.cache
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.EditTerrainForm.resources
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.Properties.Resources.resources
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.csproj.GenerateResource.Cache
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.exe
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.pdb
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.AppForm.resources
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.CreateNewTerrainForm.resources
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.InfoAppForm.resources
+C:\Users\WHD\Documents\Visual Studio 2008\Projects\Magrathea\Magrathea\obj\Release\Magrathea.ViewTerrainForm.resources
