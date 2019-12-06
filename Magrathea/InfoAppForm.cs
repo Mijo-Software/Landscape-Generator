@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Magrathea
 {
-  public partial class InfoAppForm : Form
-  {
-    public InfoAppForm()
-    {
-      InitializeComponent();
-    }
-  }
+	public partial class InfoAppForm : Form
+	{
+		public InfoAppForm() => InitializeComponent();
+
+		private void InfoAppForm_Load(object sender, System.EventArgs e)
+		{
+		}
+	}
 }

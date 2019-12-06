@@ -1,128 +1,99 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Magrathea
 {
-  public partial class EditTerrainForm : Form
-  {
-    public EditTerrainForm()
-    {
-      InitializeComponent();
-    }
+	public partial class EditTerrainForm : Form
+	{
+		public EditTerrainForm() => InitializeComponent();
 
-    private void btnIncreasePlane_Click(object sender, EventArgs e)
-    {
+		private void ButtonIncreasePlane_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonDecreasePlane_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void btnDecreasePlane_Click(object sender, EventArgs e)
-    {
+		private void ButtonRotateLeft90_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonRotateRight90_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void btnRotateLeft90_Click(object sender, EventArgs e)
-    {
+		private void ButtonMirrorHorizontal_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonMirrorVertical_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void btnRotateRight90_Click(object sender, EventArgs e)
-    {
+		private void ButtonCanyonize_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonInvert_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void btnMirrorHorizontal_Click(object sender, EventArgs e)
-    {
+		private void ButtonSmooth_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonViewTerrainFull_Click(object sender, EventArgs e)
+		{
+			ViewTerrainForm formViewTerrain = new ViewTerrainForm();
+			if (formViewTerrain.ShowDialog() == DialogResult.OK)
+			{
+				//MessageBox.Show(formViewTerrain.Name + " was entered into the database");
+			}
+		}
 
-    private void btnMirrorVertical_Click(object sender, EventArgs e)
-    {
+		private void ButtonShiftTerrainBackward_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonShiftTerrainN_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void btnCanyonize_Click(object sender, EventArgs e)
-    {
+		private void ButtonShiftTerrainNE_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonShiftTerrainE_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void btnInvert_Click(object sender, EventArgs e)
-    {
+		private void ButtonShiftTerrainSE_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonShiftTerrainS_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void btnSmooth_Click(object sender, EventArgs e)
-    {
+		private void ButtonShiftTerrainSW_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
+		private void ButtonShiftTerrainW_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void btnViewTerrainFull_Click(object sender, EventArgs e)
-    {
-      ViewTerrainForm formViewTerrain = new ViewTerrainForm();
-      if (formViewTerrain.ShowDialog() == DialogResult.OK)
-      {
-        //MessageBox.Show(formViewTerrain.Name + " was entered into the database");
-      }
-    }
+		private void ButtonShiftTerrainNW_Click(object sender, EventArgs e)
+		{
+		}
 
-    private void bntShiftTerrainBackward_Click(object sender, EventArgs e)
-    {
+		private void ButtonOK_Click(object sender, EventArgs e)
+		{
+		}
 
-    }
-
-    private void bntShiftTerrainN_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void bntShiftTerrainNE_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void bntShiftTerrainE_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void bntShiftTerrainSE_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void bntShiftTerrainS_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void bntShiftTerrainSW_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void bntShiftTerrainW_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void bntShiftTerrainNW_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void btnOK_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void btnCancel_Click(object sender, EventArgs e)
-    {
-
-    }
-
-  }
+		private void ButtonCancel_Click(object sender, EventArgs e)
+		{
+		}
+	}
 }
