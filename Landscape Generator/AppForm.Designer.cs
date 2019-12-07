@@ -30,8 +30,11 @@
     {
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppForm));
-			this.buttonCloseApp = new System.Windows.Forms.Button();
-			this.buttonInfoApp = new System.Windows.Forms.Button();
+			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+			this.buttonSettings = new System.Windows.Forms.Button();
+			this.buttonHelp = new System.Windows.Forms.Button();
+			this.buttonExit = new System.Windows.Forms.Button();
+			this.buttonInformation = new System.Windows.Forms.Button();
 			this.buttonExportAsScript = new System.Windows.Forms.Button();
 			this.buttonExportAsImage = new System.Windows.Forms.Button();
 			this.buttonExportAsModel = new System.Windows.Forms.Button();
@@ -40,7 +43,6 @@
 			this.buttonSaveTerrain = new System.Windows.Forms.Button();
 			this.buttonLoadTerrain = new System.Windows.Forms.Button();
 			this.buttonNewTerrain = new System.Windows.Forms.Button();
-			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
 			this.contextMenuStripIconThemes = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.toolStripMenuItemFatcow = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,43 +54,73 @@
 			this.contextMenuStripIconThemes.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// buttonCloseApp
+			// buttonSettings
 			// 
-			this.buttonCloseApp.Image = ((System.Drawing.Image)(resources.GetObject("buttonCloseApp.Image")));
-			this.buttonCloseApp.Location = new System.Drawing.Point(233, 271);
-			this.buttonCloseApp.Name = "buttonCloseApp";
-			this.buttonCloseApp.Size = new System.Drawing.Size(210, 40);
-			this.buttonCloseApp.TabIndex = 18;
-			this.buttonCloseApp.Text = "Programm beenden";
-			this.buttonCloseApp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.buttonCloseApp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonCloseApp, "Beendet das Programm");
-			this.buttonCloseApp.UseCompatibleTextRendering = true;
-			this.buttonCloseApp.UseVisualStyleBackColor = true;
-			this.buttonCloseApp.Click += new System.EventHandler(this.ButtonCloseApp_Click);
+			this.buttonSettings.Image = global::LandscapeGenerator.Properties.Resources.fatcow_wrench;
+			this.buttonSettings.Location = new System.Drawing.Point(12, 255);
+			this.buttonSettings.Name = "buttonSettings";
+			this.buttonSettings.Size = new System.Drawing.Size(210, 40);
+			this.buttonSettings.TabIndex = 10;
+			this.buttonSettings.Text = "Einstellungen laden";
+			this.buttonSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.buttonSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonSettings, "Beendet das Programm");
+			this.buttonSettings.UseCompatibleTextRendering = true;
+			this.buttonSettings.UseVisualStyleBackColor = true;
+			this.buttonSettings.Click += new System.EventHandler(this.ButtonSettings_Click);
 			// 
-			// buttonInfoApp
+			// buttonHelp
 			// 
-			this.buttonInfoApp.Image = ((System.Drawing.Image)(resources.GetObject("buttonInfoApp.Image")));
-			this.buttonInfoApp.Location = new System.Drawing.Point(12, 271);
-			this.buttonInfoApp.Name = "buttonInfoApp";
-			this.buttonInfoApp.Size = new System.Drawing.Size(210, 40);
-			this.buttonInfoApp.TabIndex = 16;
-			this.buttonInfoApp.Text = "Programminformationen anzeigen";
-			this.buttonInfoApp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.buttonInfoApp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonInfoApp, "Zeigt Informationen zum Programm an");
-			this.buttonInfoApp.UseCompatibleTextRendering = true;
-			this.buttonInfoApp.UseVisualStyleBackColor = true;
-			this.buttonInfoApp.Click += new System.EventHandler(this.ButtonInfoApp_Click);
+			this.buttonHelp.Image = global::LandscapeGenerator.Properties.Resources.fatcow_help;
+			this.buttonHelp.Location = new System.Drawing.Point(233, 209);
+			this.buttonHelp.Name = "buttonHelp";
+			this.buttonHelp.Size = new System.Drawing.Size(210, 40);
+			this.buttonHelp.TabIndex = 9;
+			this.buttonHelp.Text = "Hilfe anzeigen";
+			this.buttonHelp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.buttonHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonHelp, "Beendet das Programm");
+			this.buttonHelp.UseCompatibleTextRendering = true;
+			this.buttonHelp.UseVisualStyleBackColor = true;
+			this.buttonHelp.Click += new System.EventHandler(this.ButtonHelp_Click);
+			// 
+			// buttonExit
+			// 
+			this.buttonExit.Image = global::LandscapeGenerator.Properties.Resources.fatcow_door;
+			this.buttonExit.Location = new System.Drawing.Point(233, 255);
+			this.buttonExit.Name = "buttonExit";
+			this.buttonExit.Size = new System.Drawing.Size(210, 40);
+			this.buttonExit.TabIndex = 11;
+			this.buttonExit.Text = "Programm beenden";
+			this.buttonExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.buttonExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonExit, "Beendet das Programm");
+			this.buttonExit.UseCompatibleTextRendering = true;
+			this.buttonExit.UseVisualStyleBackColor = true;
+			this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
+			// 
+			// buttonInformation
+			// 
+			this.buttonInformation.Image = global::LandscapeGenerator.Properties.Resources.fatcow_information;
+			this.buttonInformation.Location = new System.Drawing.Point(12, 209);
+			this.buttonInformation.Name = "buttonInformation";
+			this.buttonInformation.Size = new System.Drawing.Size(210, 40);
+			this.buttonInformation.TabIndex = 8;
+			this.buttonInformation.Text = "Programminformationen anzeigen";
+			this.buttonInformation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.buttonInformation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonInformation, "Zeigt Informationen zum Programm an");
+			this.buttonInformation.UseCompatibleTextRendering = true;
+			this.buttonInformation.UseVisualStyleBackColor = true;
+			this.buttonInformation.Click += new System.EventHandler(this.ButtonInformation_Click);
 			// 
 			// buttonExportAsScript
 			// 
-			this.buttonExportAsScript.Image = ((System.Drawing.Image)(resources.GetObject("buttonExportAsScript.Image")));
-			this.buttonExportAsScript.Location = new System.Drawing.Point(233, 190);
+			this.buttonExportAsScript.Image = global::LandscapeGenerator.Properties.Resources.fatcow_script;
+			this.buttonExportAsScript.Location = new System.Drawing.Point(233, 150);
 			this.buttonExportAsScript.Name = "buttonExportAsScript";
 			this.buttonExportAsScript.Size = new System.Drawing.Size(210, 40);
-			this.buttonExportAsScript.TabIndex = 14;
+			this.buttonExportAsScript.TabIndex = 7;
 			this.buttonExportAsScript.Text = "Als SQL-Skript exportieren";
 			this.buttonExportAsScript.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.buttonExportAsScript.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -99,11 +131,11 @@
 			// 
 			// buttonExportAsImage
 			// 
-			this.buttonExportAsImage.Image = ((System.Drawing.Image)(resources.GetObject("buttonExportAsImage.Image")));
-			this.buttonExportAsImage.Location = new System.Drawing.Point(233, 129);
+			this.buttonExportAsImage.Image = global::LandscapeGenerator.Properties.Resources.fatcow_image;
+			this.buttonExportAsImage.Location = new System.Drawing.Point(233, 104);
 			this.buttonExportAsImage.Name = "buttonExportAsImage";
 			this.buttonExportAsImage.Size = new System.Drawing.Size(210, 40);
-			this.buttonExportAsImage.TabIndex = 12;
+			this.buttonExportAsImage.TabIndex = 5;
 			this.buttonExportAsImage.Text = "Als Grafik exportieren";
 			this.buttonExportAsImage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.buttonExportAsImage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -114,11 +146,11 @@
 			// 
 			// buttonExportAsModel
 			// 
-			this.buttonExportAsModel.Image = ((System.Drawing.Image)(resources.GetObject("buttonExportAsModel.Image")));
-			this.buttonExportAsModel.Location = new System.Drawing.Point(233, 69);
+			this.buttonExportAsModel.Image = global::LandscapeGenerator.Properties.Resources.fatcow_shape_square;
+			this.buttonExportAsModel.Location = new System.Drawing.Point(233, 58);
 			this.buttonExportAsModel.Name = "buttonExportAsModel";
 			this.buttonExportAsModel.Size = new System.Drawing.Size(210, 40);
-			this.buttonExportAsModel.TabIndex = 10;
+			this.buttonExportAsModel.TabIndex = 3;
 			this.buttonExportAsModel.Text = "Als Modell exportieren";
 			this.buttonExportAsModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.buttonExportAsModel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -129,11 +161,11 @@
 			// 
 			// buttonEditTerrain
 			// 
-			this.buttonEditTerrain.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditTerrain.Image")));
+			this.buttonEditTerrain.Image = global::LandscapeGenerator.Properties.Resources.fatcow_pencil;
 			this.buttonEditTerrain.Location = new System.Drawing.Point(233, 12);
 			this.buttonEditTerrain.Name = "buttonEditTerrain";
 			this.buttonEditTerrain.Size = new System.Drawing.Size(210, 40);
-			this.buttonEditTerrain.TabIndex = 8;
+			this.buttonEditTerrain.TabIndex = 1;
 			this.buttonEditTerrain.Text = "Aktuelles Terrain bearbeiten";
 			this.buttonEditTerrain.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.buttonEditTerrain.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -144,8 +176,8 @@
 			// 
 			// buttonCloseTerrain
 			// 
-			this.buttonCloseTerrain.Image = ((System.Drawing.Image)(resources.GetObject("buttonCloseTerrain.Image")));
-			this.buttonCloseTerrain.Location = new System.Drawing.Point(12, 190);
+			this.buttonCloseTerrain.Image = global::LandscapeGenerator.Properties.Resources.fatcow_cross;
+			this.buttonCloseTerrain.Location = new System.Drawing.Point(12, 150);
 			this.buttonCloseTerrain.Name = "buttonCloseTerrain";
 			this.buttonCloseTerrain.Size = new System.Drawing.Size(210, 40);
 			this.buttonCloseTerrain.TabIndex = 6;
@@ -159,8 +191,8 @@
 			// 
 			// buttonSaveTerrain
 			// 
-			this.buttonSaveTerrain.Image = ((System.Drawing.Image)(resources.GetObject("buttonSaveTerrain.Image")));
-			this.buttonSaveTerrain.Location = new System.Drawing.Point(12, 129);
+			this.buttonSaveTerrain.Image = global::LandscapeGenerator.Properties.Resources.fatcow_disk;
+			this.buttonSaveTerrain.Location = new System.Drawing.Point(12, 104);
 			this.buttonSaveTerrain.Name = "buttonSaveTerrain";
 			this.buttonSaveTerrain.Size = new System.Drawing.Size(210, 40);
 			this.buttonSaveTerrain.TabIndex = 4;
@@ -174,8 +206,8 @@
 			// 
 			// buttonLoadTerrain
 			// 
-			this.buttonLoadTerrain.Image = ((System.Drawing.Image)(resources.GetObject("buttonLoadTerrain.Image")));
-			this.buttonLoadTerrain.Location = new System.Drawing.Point(12, 69);
+			this.buttonLoadTerrain.Image = global::LandscapeGenerator.Properties.Resources.fatcow_folder;
+			this.buttonLoadTerrain.Location = new System.Drawing.Point(12, 58);
 			this.buttonLoadTerrain.Name = "buttonLoadTerrain";
 			this.buttonLoadTerrain.Size = new System.Drawing.Size(210, 40);
 			this.buttonLoadTerrain.TabIndex = 2;
@@ -189,7 +221,7 @@
 			// 
 			// buttonNewTerrain
 			// 
-			this.buttonNewTerrain.Image = ((System.Drawing.Image)(resources.GetObject("buttonNewTerrain.Image")));
+			this.buttonNewTerrain.Image = global::LandscapeGenerator.Properties.Resources.fatcow_asterisk;
 			this.buttonNewTerrain.Location = new System.Drawing.Point(12, 12);
 			this.buttonNewTerrain.Name = "buttonNewTerrain";
 			this.buttonNewTerrain.Size = new System.Drawing.Size(210, 40);
@@ -208,11 +240,11 @@
 			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
             this.toolStripStatusLabel2});
-			this.statusStrip.Location = new System.Drawing.Point(0, 320);
+			this.statusStrip.Location = new System.Drawing.Point(0, 309);
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.Size = new System.Drawing.Size(455, 22);
 			this.statusStrip.SizingGrip = false;
-			this.statusStrip.TabIndex = 20;
+			this.statusStrip.TabIndex = 12;
 			this.statusStrip.Text = "statusStripApp";
 			// 
 			// contextMenuStripIconThemes
@@ -231,7 +263,7 @@
 			this.toolStripMenuItemFatcow.Name = "toolStripMenuItemFatcow";
 			this.toolStripMenuItemFatcow.Size = new System.Drawing.Size(112, 22);
 			this.toolStripMenuItemFatcow.Text = "Fatcow";
-			this.toolStripMenuItemFatcow.MouseEnter += new System.EventHandler(this.ToolStripMenuItemFatcow_MouseEnter);
+			this.toolStripMenuItemFatcow.MouseEnter += new System.EventHandler(this.ToolStripMenuItemFatcowIcons_MouseEnter);
 			// 
 			// toolStripMenuItemFugue
 			// 
@@ -239,7 +271,7 @@
 			this.toolStripMenuItemFugue.Name = "toolStripMenuItemFugue";
 			this.toolStripMenuItemFugue.Size = new System.Drawing.Size(112, 22);
 			this.toolStripMenuItemFugue.Text = "Fugue";
-			this.toolStripMenuItemFugue.MouseEnter += new System.EventHandler(this.ToolStripMenuItemFugue_MouseEnter);
+			this.toolStripMenuItemFugue.MouseEnter += new System.EventHandler(this.ToolStripMenuItemFugueIcons_MouseEnter);
 			// 
 			// toolStripMenuItemSilk
 			// 
@@ -247,7 +279,7 @@
 			this.toolStripMenuItemSilk.Name = "toolStripMenuItemSilk";
 			this.toolStripMenuItemSilk.Size = new System.Drawing.Size(112, 22);
 			this.toolStripMenuItemSilk.Text = "Silk";
-			this.toolStripMenuItemSilk.MouseEnter += new System.EventHandler(this.ToolStripMenuItemSilk_MouseEnter);
+			this.toolStripMenuItemSilk.MouseEnter += new System.EventHandler(this.ToolStripMenuItemSilkIcons_MouseEnter);
 			// 
 			// toolStripStatusLabel
 			// 
@@ -259,7 +291,7 @@
 			// 
 			this.toolStripStatusLabel2.AutoToolTip = true;
 			this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-			this.toolStripStatusLabel2.Size = new System.Drawing.Size(291, 17);
+			this.toolStripStatusLabel2.Size = new System.Drawing.Size(322, 17);
 			this.toolStripStatusLabel2.Spring = true;
 			this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
 			this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -268,10 +300,12 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(455, 342);
+			this.ClientSize = new System.Drawing.Size(455, 331);
+			this.Controls.Add(this.buttonSettings);
+			this.Controls.Add(this.buttonHelp);
 			this.Controls.Add(this.statusStrip);
-			this.Controls.Add(this.buttonCloseApp);
-			this.Controls.Add(this.buttonInfoApp);
+			this.Controls.Add(this.buttonExit);
+			this.Controls.Add(this.buttonInformation);
 			this.Controls.Add(this.buttonExportAsScript);
 			this.Controls.Add(this.buttonExportAsImage);
 			this.Controls.Add(this.buttonExportAsModel);
@@ -296,8 +330,8 @@
     }
 
     #endregion
-    private System.Windows.Forms.Button buttonCloseApp;
-    private System.Windows.Forms.Button buttonInfoApp;
+    private System.Windows.Forms.Button buttonExit;
+    private System.Windows.Forms.Button buttonInformation;
     private System.Windows.Forms.Button buttonExportAsScript;
     private System.Windows.Forms.Button buttonExportAsImage;
     private System.Windows.Forms.Button buttonExportAsModel;
@@ -314,6 +348,8 @@
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemFatcow;
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemFugue;
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemSilk;
+		private System.Windows.Forms.Button buttonHelp;
+		private System.Windows.Forms.Button buttonSettings;
 	}
 }
 

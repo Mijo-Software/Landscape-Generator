@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LandscapeGenerator.Properties;
+using System;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace LandscapeGenerator
@@ -8,6 +10,16 @@ namespace LandscapeGenerator
   /// </summary>
   public partial class AppForm : Form
   {
+    /// <summary>
+		/// Settings
+		/// </summary>
+		private readonly Settings settings = new Settings();
+
+    /// <summary>
+		/// culture info for the date
+		/// </summary>
+		private readonly CultureInfo culture = CultureInfo.CurrentUICulture;
+
     /// <summary>
     /// Constructor
     /// </summary>
@@ -21,6 +33,12 @@ namespace LandscapeGenerator
     /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
     private void AppForm_Load(object sender, EventArgs e)
     {
+      switch (settings.userIconSet)
+      {
+        default: ToolStripMenuItemFatcowIcons_MouseEnter(sender: null, e: EventArgs.Empty); break;
+        case "fugue": ToolStripMenuItemFugueIcons_MouseEnter(sender: null, e: EventArgs.Empty); break;
+        case "silk": ToolStripMenuItemSilkIcons_MouseEnter(sender: null, e: EventArgs.Empty); break;
+      }
     }
 
     /// <summary>
@@ -76,7 +94,7 @@ namespace LandscapeGenerator
     /// <param name="sender">object sender</param>
     /// <param name="e">event arguments</param>
     /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
-    private void ButtonInfoApp_Click(object sender, EventArgs e)
+    private void ButtonInformation_Click(object sender, EventArgs e)
     {
       using (InfoAppForm formInfoApp = new InfoAppForm())
       {
@@ -85,6 +103,26 @@ namespace LandscapeGenerator
           //MessageBox.Show(formInfoApp.Name + " was entered into the database");
         }
       }
+    }
+
+    /// <summary>
+    /// Open the help
+    /// </summary>
+    /// <param name="sender">object sender</param>
+    /// <param name="e">event arguments</param>
+    /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
+    private void ButtonHelp_Click(object sender, EventArgs e)
+    {
+    }
+
+    /// <summary>
+    /// Load the settings
+    /// </summary>
+    /// <param name="sender">object sender</param>
+    /// <param name="e">event arguments</param>
+    /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
+    private void ButtonSettings_Click(object sender, EventArgs e)
+    {
     }
 
     /// <summary>
@@ -140,13 +178,10 @@ namespace LandscapeGenerator
     /// <param name="sender">object sender</param>
     /// <param name="e">event arguments</param>
     /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
-    private void ButtonCloseApp_Click(object sender, EventArgs e)
+    private void ButtonExit_Click(object sender, EventArgs e)
     {
-      const string message = "Wollen Sie das Programm wirklich beenden?";
-      const string caption = "Programm beenden";
-      const MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-      DialogResult result = MessageBox.Show(message, caption, buttons);
-      if (result == DialogResult.Yes)
+      DialogResult dialogResult = MessageBox.Show(text: Localization.exitTheAppQuestion, caption: Localization.exitTheAppTitle, buttons: MessageBoxButtons.YesNo);
+      if (dialogResult == DialogResult.Yes)
       {
         Close();
       }
@@ -158,11 +193,25 @@ namespace LandscapeGenerator
     /// <param name="sender">object sender</param>
     /// <param name="e">event arguments</param>
     /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
-    private void ToolStripMenuItemFatcow_MouseEnter(object sender, EventArgs e)
+    private void ToolStripMenuItemFatcowIcons_MouseEnter(object sender, EventArgs e)
     {
       toolStripMenuItemFatcow.Checked = true;
       toolStripMenuItemFugue.Checked = false;
       toolStripMenuItemSilk.Checked = false;
+      buttonNewTerrain.Image = Resources.fatcow_asterisk;
+      buttonEditTerrain.Image = Resources.fatcow_pencil;
+      buttonLoadTerrain.Image = Resources.fatcow_folder;
+      buttonExportAsModel.Image = Resources.fatcow_shape_square;
+      buttonSaveTerrain.Image = Resources.fatcow_disk;
+      buttonExportAsImage.Image = Resources.fatcow_image;
+      buttonCloseTerrain.Image = Resources.fatcow_cross;
+      buttonExportAsScript.Image = Resources.fatcow_script;
+      buttonInformation.Image = Resources.fatcow_information;
+      buttonHelp.Image = Resources.fatcow_help;
+      buttonSettings.Image = Resources.fatcow_wrench;
+      buttonExit.Image = Resources.fatcow_door;
+      settings.userIconSet = Resources.iconNameFatcow;
+      settings.Save();
     }
 
     /// <summary>
@@ -171,11 +220,25 @@ namespace LandscapeGenerator
     /// <param name="sender">object sender</param>
     /// <param name="e">event arguments</param>
     /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
-    private void ToolStripMenuItemFugue_MouseEnter(object sender, EventArgs e)
+    private void ToolStripMenuItemFugueIcons_MouseEnter(object sender, EventArgs e)
     {
       toolStripMenuItemFatcow.Checked = false;
       toolStripMenuItemFugue.Checked = true;
       toolStripMenuItemSilk.Checked = false;
+      buttonNewTerrain.Image = Resources.fugue_asterisk;
+      buttonEditTerrain.Image = Resources.fugue_pencil;
+      buttonLoadTerrain.Image = Resources.fugue_folder;
+      buttonExportAsModel.Image = Resources.fugue_shape_square;
+      buttonSaveTerrain.Image = Resources.fugue_disk;
+      buttonExportAsImage.Image = Resources.fugue_image;
+      buttonCloseTerrain.Image = Resources.fugue_cross;
+      buttonExportAsScript.Image = Resources.fugue_script;
+      buttonInformation.Image = Resources.fugue_information;
+      buttonHelp.Image = Resources.fugue_help;
+      buttonSettings.Image = Resources.fugue_wrench;
+      buttonExit.Image = Resources.fugue_door;
+      settings.userIconSet = Resources.iconNameFugue;
+      settings.Save();
     }
 
     /// <summary>
@@ -184,11 +247,25 @@ namespace LandscapeGenerator
     /// <param name="sender">object sender</param>
     /// <param name="e">event arguments</param>
     /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
-    private void ToolStripMenuItemSilk_MouseEnter(object sender, EventArgs e)
+    private void ToolStripMenuItemSilkIcons_MouseEnter(object sender, EventArgs e)
     {
       toolStripMenuItemFatcow.Checked = false;
       toolStripMenuItemFugue.Checked = false;
       toolStripMenuItemSilk.Checked = true;
+      buttonNewTerrain.Image = Resources.silk_asterisk;
+      buttonEditTerrain.Image = Resources.silk_pencil;
+      buttonLoadTerrain.Image = Resources.silk_folder;
+      buttonExportAsModel.Image = Resources.silk_shape_square;
+      buttonSaveTerrain.Image = Resources.silk_disk;
+      buttonExportAsImage.Image = Resources.silk_image;
+      buttonCloseTerrain.Image = Resources.silk_cross;
+      buttonExportAsScript.Image = Resources.silk_script;
+      buttonInformation.Image = Resources.silk_information;
+      buttonHelp.Image = Resources.silk_help;
+      buttonSettings.Image = Resources.silk_wrench;
+      buttonExit.Image = Resources.silk_door;
+      settings.userIconSet = Resources.iconNameSilk;
+      settings.Save();
     }
   }
 }

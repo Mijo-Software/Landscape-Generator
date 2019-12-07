@@ -129,6 +129,11 @@
     <Compile Include="InfoAppForm.Designer.cs">
       <DependentUpon>InfoAppForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Localization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AppForm.resx">
@@ -146,6 +151,10 @@
     <EmbeddedResource Include="InfoAppForm.resx">
       <DependentUpon>InfoAppForm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -214,6 +223,123 @@
     <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.9.6\analyzers\dotnet\cs\Microsoft.NetCore.CSharp.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.9.6\analyzers\dotnet\cs\Microsoft.NetFramework.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.9.6\analyzers\dotnet\cs\Microsoft.NetFramework.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_shape_square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_shape_square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_shape_square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_wrench.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
