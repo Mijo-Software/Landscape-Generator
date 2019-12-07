@@ -22,5 +22,26 @@ namespace LandscapeGenerator.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("silk")]
+        public string userIconSet {
+            get {
+                return ((string)(this["userIconSet"]));
+            }
+            set {
+                this["userIconSet"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("silk")]
+        public string systemIconSet {
+            get {
+                return ((string)(this["systemIconSet"]));
+            }
+        }
     }
 }
