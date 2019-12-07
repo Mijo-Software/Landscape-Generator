@@ -63,6 +63,16 @@ namespace LandscapeGenerator.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banner {
+            get {
+                object obj = ResourceManager.GetObject("banner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fatcow_asterisk {
             get {
                 object obj = ResourceManager.GetObject("fatcow_asterisk", resourceCulture);
@@ -173,10 +183,30 @@ namespace LandscapeGenerator.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fatcow_tick {
+            get {
+                object obj = ResourceManager.GetObject("fatcow_tick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fatcow_world {
             get {
                 object obj = ResourceManager.GetObject("fatcow_world", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon fatcow_world_16 {
+            get {
+                object obj = ResourceManager.GetObject("fatcow_world_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -303,10 +333,30 @@ namespace LandscapeGenerator.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fugue_tick {
+            get {
+                object obj = ResourceManager.GetObject("fugue_tick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fugue_world {
             get {
                 object obj = ResourceManager.GetObject("fugue_world", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon fugue_world_16 {
+            get {
+                object obj = ResourceManager.GetObject("fugue_world_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -350,39 +400,9 @@ namespace LandscapeGenerator.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo16x16 {
+        internal static System.Drawing.Bitmap LscGen {
             get {
-                object obj = ResourceManager.GetObject("logo16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo24x24 {
-            get {
-                object obj = ResourceManager.GetObject("logo24x24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo32x32 {
-            get {
-                object obj = ResourceManager.GetObject("logo32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo48x48 {
-            get {
-                object obj = ResourceManager.GetObject("logo48x48", resourceCulture);
+                object obj = ResourceManager.GetObject("LscGen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -500,10 +520,30 @@ namespace LandscapeGenerator.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap silk_tick {
+            get {
+                object obj = ResourceManager.GetObject("silk_tick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap silk_world {
             get {
                 object obj = ResourceManager.GetObject("silk_world", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon silk_world_16 {
+            get {
+                object obj = ResourceManager.GetObject("silk_world_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
