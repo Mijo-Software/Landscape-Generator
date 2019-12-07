@@ -95,6 +95,9 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LscGen.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -104,6 +107,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBoxForm.designer.cs">
+      <DependentUpon>AboutBoxForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,12 +132,6 @@
     <Compile Include="EditTerrainForm.Designer.cs">
       <DependentUpon>EditTerrainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="InfoAppForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InfoAppForm.Designer.cs">
-      <DependentUpon>InfoAppForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Localization.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -136,6 +139,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBoxForm.resx">
+      <DependentUpon>AboutBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppForm.resx">
       <DependentUpon>AppForm.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -146,10 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditTerrainForm.resx">
       <DependentUpon>EditTerrainForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InfoAppForm.resx">
-      <DependentUpon>InfoAppForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization.resx">
@@ -187,18 +189,6 @@
     <Compile Include="ViewTerrainForm.Designer.cs">
       <DependentUpon>ViewTerrainForm.cs</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo16x16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo24x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo48x48.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\terrain_test1.png" />
@@ -340,6 +330,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\silk_wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fatcow_world_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fugue_world_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silk_world_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LscGen.ico" />
+    <None Include="Resources\silk_tick.png" />
+    <None Include="Resources\fugue_tick.png" />
+    <None Include="Resources\fatcow_tick.png" />
+    <None Include="Resources\LscGen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

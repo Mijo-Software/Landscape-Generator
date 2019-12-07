@@ -1,6 +1,6 @@
 ﻿namespace LandscapeGenerator
 {
-  partial class AppForm
+  partial class mainForm
   {
     /// <summary>
     /// Erforderliche Designervariable.
@@ -29,7 +29,7 @@
     private void InitializeComponent()
     {
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppForm));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.buttonSettings = new System.Windows.Forms.Button();
 			this.buttonHelp = new System.Windows.Forms.Button();
@@ -296,7 +296,7 @@
 			this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
 			this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// AppForm
+			// mainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -317,9 +317,9 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
-			this.Name = "AppForm";
+			this.Name = "mainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Magrathea - Terrain Builder";
+			this.Text = "Landscape Generator";
 			this.Load += new System.EventHandler(this.AppForm_Load);
 			this.statusStrip.ResumeLayout(false);
 			this.statusStrip.PerformLayout();

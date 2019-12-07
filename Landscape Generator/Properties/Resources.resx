@@ -118,8 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="logo24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo24x24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fatcow_door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fatcow_cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fugue_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fugue_cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fugue_cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,8 +133,14 @@
   <data name="silk_cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silk_cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fugue_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fugue_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNameFatcow" xml:space="preserve">
+    <value>fatcow</value>
+  </data>
+  <data name="silk_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silk_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silk_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silk_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,11 +148,23 @@
   <data name="terrain_test2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\terrain_test2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fatcow_disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fatcow_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fatcow_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fatcow_disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fatcow_disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fugue_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fugue_information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="silk_door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silk_door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fugue_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fatcow_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fatcow_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fatcow_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,20 +175,41 @@
   <data name="silk_shape_square" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silk_shape_square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="silk_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silk_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="silk_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silk_information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fatcow_world" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fatcow_world.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fugue_script" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fugue_script.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silk_asterisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silk_asterisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="silk_script" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silk_script.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_world_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fugue_world_16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fugue_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNameFugue" xml:space="preserve">
+    <value>fugue</value>
+  </data>
+  <data name="fugue_door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fugue_door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fatcow_script" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_script.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LscGen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LscGen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silk_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silk_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,8 +220,8 @@
   <data name="fugue_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fugue_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fatcow_cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fatcow_cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fatcow_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fugue_world" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fugue_world.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,14 +232,23 @@
   <data name="fugue_asterisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fugue_asterisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="silk_world_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silk_world_16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fatcow_shape_square" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fatcow_shape_square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fatcow_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fatcow_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fatcow_world_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_world_16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fugue_shape_square" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fugue_shape_square.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fatcow_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fugue_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fugue_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,64 +256,22 @@
   <data name="terrain_test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\terrain_test1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconNameSilk" xml:space="preserve">
+    <value>silk</value>
+  </data>
   <data name="fugue_disk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fugue_disk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silk_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silk_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fatcow_door" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fatcow_door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fatcow_tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fatcow_tick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fatcow_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fatcow_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fugue_tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fugue_tick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fatcow_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fatcow_information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fatcow_script" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fatcow_script.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fatcow_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fatcow_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fugue_door" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fugue_door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fugue_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fugue_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fugue_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fugue_information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fugue_script" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fugue_script.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fugue_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fugue_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="silk_door" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\silk_door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="silk_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\silk_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="silk_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\silk_information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="silk_script" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\silk_script.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="silk_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\silk_wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconNameFatcow" xml:space="preserve">
-    <value>fatcow</value>
-  </data>
-  <data name="iconNameFugue" xml:space="preserve">
-    <value>fugue</value>
-  </data>
-  <data name="iconNameSilk" xml:space="preserve">
-    <value>silk</value>
+  <data name="silk_tick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silk_tick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

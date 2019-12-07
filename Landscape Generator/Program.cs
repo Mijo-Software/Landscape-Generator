@@ -16,7 +16,7 @@ namespace LandscapeGenerator
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(defaultValue: false);
-			using (AppForm appForm = new AppForm())
+			using (mainForm appForm = new mainForm())
 			{
 				Application.Run(mainForm: appForm);
 			}

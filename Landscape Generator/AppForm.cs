@@ -8,7 +8,7 @@ namespace LandscapeGenerator
   /// <summary>
   /// AppForm
   /// </summary>
-  public partial class AppForm : Form
+  public partial class mainForm : Form
   {
     /// <summary>
 		/// Settings
@@ -23,7 +23,7 @@ namespace LandscapeGenerator
     /// <summary>
     /// Constructor
     /// </summary>
-    public AppForm() => InitializeComponent();
+    public mainForm() => InitializeComponent();
 
     /// <summary>
     /// Load the main window
@@ -96,9 +96,9 @@ namespace LandscapeGenerator
     /// <remarks>The parameters <paramref name="e"/> and <paramref name="sender"/> are not needed, but must be indicated.</remarks>
     private void ButtonInformation_Click(object sender, EventArgs e)
     {
-      using (InfoAppForm formInfoApp = new InfoAppForm())
+      using (AboutBoxForm aboutBoxForm = new AboutBoxForm())
       {
-        if (formInfoApp.ShowDialog() == DialogResult.OK)
+        if (aboutBoxForm.ShowDialog() == DialogResult.OK)
         {
           //MessageBox.Show(formInfoApp.Name + " was entered into the database");
         }
@@ -198,6 +198,7 @@ namespace LandscapeGenerator
       toolStripMenuItemFatcow.Checked = true;
       toolStripMenuItemFugue.Checked = false;
       toolStripMenuItemSilk.Checked = false;
+      Icon = Resources.fatcow_world_16;
       buttonNewTerrain.Image = Resources.fatcow_asterisk;
       buttonEditTerrain.Image = Resources.fatcow_pencil;
       buttonLoadTerrain.Image = Resources.fatcow_folder;
@@ -225,6 +226,7 @@ namespace LandscapeGenerator
       toolStripMenuItemFatcow.Checked = false;
       toolStripMenuItemFugue.Checked = true;
       toolStripMenuItemSilk.Checked = false;
+      Icon = Resources.fugue_world_16;
       buttonNewTerrain.Image = Resources.fugue_asterisk;
       buttonEditTerrain.Image = Resources.fugue_pencil;
       buttonLoadTerrain.Image = Resources.fugue_folder;
@@ -252,6 +254,7 @@ namespace LandscapeGenerator
       toolStripMenuItemFatcow.Checked = false;
       toolStripMenuItemFugue.Checked = false;
       toolStripMenuItemSilk.Checked = true;
+      Icon = Resources.silk_world_16;
       buttonNewTerrain.Image = Resources.silk_asterisk;
       buttonEditTerrain.Image = Resources.silk_pencil;
       buttonLoadTerrain.Image = Resources.silk_folder;
