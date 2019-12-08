@@ -29,7 +29,6 @@
     private void InitializeComponent()
     {
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditTerrainForm));
 			this.nudShiftTerrainStep = new System.Windows.Forms.NumericUpDown();
 			this.labelShiftTerrainStep = new System.Windows.Forms.Label();
 			this.rbtnCanyonizeVar = new System.Windows.Forms.RadioButton();
@@ -55,6 +54,7 @@
 			this.szTerrainName = new System.Windows.Forms.TextBox();
 			this.gboxPreviewOfTerrain = new System.Windows.Forms.GroupBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.buttonViewTerrainFull = new System.Windows.Forms.Button();
 			this.gboxCanyonize = new System.Windows.Forms.GroupBox();
 			this.buttonCanyonize = new System.Windows.Forms.Button();
 			this.gboxMirror = new System.Windows.Forms.GroupBox();
@@ -66,7 +66,6 @@
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.buttonCancel = new System.Windows.Forms.Button();
 			this.buttonOK = new System.Windows.Forms.Button();
-			this.buttonViewTerrainFull = new System.Windows.Forms.Button();
 			this.buttonSmooth = new System.Windows.Forms.Button();
 			this.buttonInvert = new System.Windows.Forms.Button();
 			this.labelProgress = new System.Windows.Forms.Label();
@@ -122,6 +121,7 @@
 			// labelTerrainName
 			// 
 			this.labelTerrainName.AutoSize = true;
+			this.labelTerrainName.BackColor = System.Drawing.Color.Transparent;
 			this.labelTerrainName.Location = new System.Drawing.Point(12, 9);
 			this.labelTerrainName.Name = "labelTerrainName";
 			this.labelTerrainName.Size = new System.Drawing.Size(91, 13);
@@ -130,6 +130,7 @@
 			// 
 			// gboxShiftTerrain
 			// 
+			this.gboxShiftTerrain.BackColor = System.Drawing.Color.Transparent;
 			this.gboxShiftTerrain.Controls.Add(this.nudShiftTerrainStep);
 			this.gboxShiftTerrain.Controls.Add(this.labelShiftTerrainStep);
 			this.gboxShiftTerrain.Controls.Add(this.buttonShiftTerrainSE);
@@ -150,7 +151,7 @@
 			// 
 			// buttonShiftTerrainSE
 			// 
-			this.buttonShiftTerrainSE.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainSE.Image")));
+			this.buttonShiftTerrainSE.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_se;
 			this.buttonShiftTerrainSE.Location = new System.Drawing.Point(65, 78);
 			this.buttonShiftTerrainSE.Name = "buttonShiftTerrainSE";
 			this.buttonShiftTerrainSE.Size = new System.Drawing.Size(23, 23);
@@ -161,7 +162,7 @@
 			// 
 			// buttonShiftTerrainS
 			// 
-			this.buttonShiftTerrainS.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainS.Image")));
+			this.buttonShiftTerrainS.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_down;
 			this.buttonShiftTerrainS.Location = new System.Drawing.Point(36, 78);
 			this.buttonShiftTerrainS.Name = "buttonShiftTerrainS";
 			this.buttonShiftTerrainS.Size = new System.Drawing.Size(23, 23);
@@ -172,7 +173,7 @@
 			// 
 			// buttonShiftTerrainSW
 			// 
-			this.buttonShiftTerrainSW.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainSW.Image")));
+			this.buttonShiftTerrainSW.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_sw;
 			this.buttonShiftTerrainSW.Location = new System.Drawing.Point(7, 78);
 			this.buttonShiftTerrainSW.Name = "buttonShiftTerrainSW";
 			this.buttonShiftTerrainSW.Size = new System.Drawing.Size(23, 23);
@@ -183,7 +184,7 @@
 			// 
 			// buttonShiftTerrainE
 			// 
-			this.buttonShiftTerrainE.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainE.Image")));
+			this.buttonShiftTerrainE.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_right;
 			this.buttonShiftTerrainE.Location = new System.Drawing.Point(65, 49);
 			this.buttonShiftTerrainE.Name = "buttonShiftTerrainE";
 			this.buttonShiftTerrainE.Size = new System.Drawing.Size(23, 23);
@@ -194,7 +195,7 @@
 			// 
 			// buttonShiftTerrainBackward
 			// 
-			this.buttonShiftTerrainBackward.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainBackward.Image")));
+			this.buttonShiftTerrainBackward.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_in;
 			this.buttonShiftTerrainBackward.Location = new System.Drawing.Point(36, 49);
 			this.buttonShiftTerrainBackward.Name = "buttonShiftTerrainBackward";
 			this.buttonShiftTerrainBackward.Size = new System.Drawing.Size(23, 23);
@@ -205,7 +206,7 @@
 			// 
 			// buttonShiftTerrainW
 			// 
-			this.buttonShiftTerrainW.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainW.Image")));
+			this.buttonShiftTerrainW.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_left;
 			this.buttonShiftTerrainW.Location = new System.Drawing.Point(7, 49);
 			this.buttonShiftTerrainW.Name = "buttonShiftTerrainW";
 			this.buttonShiftTerrainW.Size = new System.Drawing.Size(23, 23);
@@ -216,7 +217,7 @@
 			// 
 			// buttonShiftTerrainNE
 			// 
-			this.buttonShiftTerrainNE.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainNE.Image")));
+			this.buttonShiftTerrainNE.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_ne;
 			this.buttonShiftTerrainNE.ImageAlign = System.Drawing.ContentAlignment.TopRight;
 			this.buttonShiftTerrainNE.Location = new System.Drawing.Point(65, 20);
 			this.buttonShiftTerrainNE.Name = "buttonShiftTerrainNE";
@@ -228,7 +229,7 @@
 			// 
 			// buttonShiftTerrainN
 			// 
-			this.buttonShiftTerrainN.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainN.Image")));
+			this.buttonShiftTerrainN.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_up;
 			this.buttonShiftTerrainN.Location = new System.Drawing.Point(36, 20);
 			this.buttonShiftTerrainN.Name = "buttonShiftTerrainN";
 			this.buttonShiftTerrainN.Size = new System.Drawing.Size(23, 23);
@@ -239,7 +240,7 @@
 			// 
 			// buttonShiftTerrainNW
 			// 
-			this.buttonShiftTerrainNW.Image = ((System.Drawing.Image)(resources.GetObject("buttonShiftTerrainNW.Image")));
+			this.buttonShiftTerrainNW.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_nw;
 			this.buttonShiftTerrainNW.Location = new System.Drawing.Point(7, 20);
 			this.buttonShiftTerrainNW.Name = "buttonShiftTerrainNW";
 			this.buttonShiftTerrainNW.Size = new System.Drawing.Size(23, 23);
@@ -250,6 +251,7 @@
 			// 
 			// gboxPlane
 			// 
+			this.gboxPlane.BackColor = System.Drawing.Color.Transparent;
 			this.gboxPlane.Controls.Add(this.nudPlaneStep);
 			this.gboxPlane.Controls.Add(this.buttonDecreasePlane);
 			this.gboxPlane.Controls.Add(this.labelPlaneStep);
@@ -272,7 +274,7 @@
 			// 
 			// buttonDecreasePlane
 			// 
-			this.buttonDecreasePlane.Image = ((System.Drawing.Image)(resources.GetObject("buttonDecreasePlane.Image")));
+			this.buttonDecreasePlane.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_decrease;
 			this.buttonDecreasePlane.Location = new System.Drawing.Point(12, 50);
 			this.buttonDecreasePlane.Name = "buttonDecreasePlane";
 			this.buttonDecreasePlane.Size = new System.Drawing.Size(75, 23);
@@ -295,7 +297,7 @@
 			// 
 			// buttonIncreasePlane
 			// 
-			this.buttonIncreasePlane.Image = ((System.Drawing.Image)(resources.GetObject("buttonIncreasePlane.Image")));
+			this.buttonIncreasePlane.Image = global::LandscapeGenerator.Properties.Resources.fatcow_arrow_increase;
 			this.buttonIncreasePlane.Location = new System.Drawing.Point(12, 19);
 			this.buttonIncreasePlane.Name = "buttonIncreasePlane";
 			this.buttonIncreasePlane.Size = new System.Drawing.Size(75, 23);
@@ -330,6 +332,7 @@
 			// labelComment
 			// 
 			this.labelComment.AutoSize = true;
+			this.labelComment.BackColor = System.Drawing.Color.Transparent;
 			this.labelComment.Location = new System.Drawing.Point(12, 49);
 			this.labelComment.Name = "labelComment";
 			this.labelComment.Size = new System.Drawing.Size(60, 13);
@@ -346,10 +349,12 @@
 			// 
 			// gboxPreviewOfTerrain
 			// 
+			this.gboxPreviewOfTerrain.BackColor = System.Drawing.Color.Transparent;
 			this.gboxPreviewOfTerrain.Controls.Add(this.pictureBox1);
+			this.gboxPreviewOfTerrain.Controls.Add(this.buttonViewTerrainFull);
 			this.gboxPreviewOfTerrain.Location = new System.Drawing.Point(245, 12);
 			this.gboxPreviewOfTerrain.Name = "gboxPreviewOfTerrain";
-			this.gboxPreviewOfTerrain.Size = new System.Drawing.Size(125, 127);
+			this.gboxPreviewOfTerrain.Size = new System.Drawing.Size(125, 163);
 			this.gboxPreviewOfTerrain.TabIndex = 10;
 			this.gboxPreviewOfTerrain.TabStop = false;
 			this.gboxPreviewOfTerrain.Text = "Vorschau";
@@ -364,8 +369,23 @@
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			// 
+			// buttonViewTerrainFull
+			// 
+			this.buttonViewTerrainFull.Image = global::LandscapeGenerator.Properties.Resources.fatcow_image;
+			this.buttonViewTerrainFull.Location = new System.Drawing.Point(9, 128);
+			this.buttonViewTerrainFull.Name = "buttonViewTerrainFull";
+			this.buttonViewTerrainFull.Size = new System.Drawing.Size(108, 26);
+			this.buttonViewTerrainFull.TabIndex = 11;
+			this.buttonViewTerrainFull.Text = "Gesam&tansicht";
+			this.buttonViewTerrainFull.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.buttonViewTerrainFull.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonViewTerrainFull, "Öffnen der Gesamtansicht als Fenster");
+			this.buttonViewTerrainFull.UseVisualStyleBackColor = true;
+			this.buttonViewTerrainFull.Click += new System.EventHandler(this.ButtonViewTerrainFull_Click);
+			// 
 			// gboxCanyonize
 			// 
+			this.gboxCanyonize.BackColor = System.Drawing.Color.Transparent;
 			this.gboxCanyonize.Controls.Add(this.buttonCanyonize);
 			this.gboxCanyonize.Controls.Add(this.rbtnCanyonizeVar);
 			this.gboxCanyonize.Controls.Add(this.rbtnCanyonizeConst);
@@ -379,7 +399,7 @@
 			// 
 			// buttonCanyonize
 			// 
-			this.buttonCanyonize.Image = ((System.Drawing.Image)(resources.GetObject("buttonCanyonize.Image")));
+			this.buttonCanyonize.Image = global::LandscapeGenerator.Properties.Resources.fatcow_shape_square;
 			this.buttonCanyonize.Location = new System.Drawing.Point(18, 59);
 			this.buttonCanyonize.Name = "buttonCanyonize";
 			this.buttonCanyonize.Size = new System.Drawing.Size(93, 23);
@@ -393,6 +413,7 @@
 			// 
 			// gboxMirror
 			// 
+			this.gboxMirror.BackColor = System.Drawing.Color.Transparent;
 			this.gboxMirror.Controls.Add(this.buttonMirrorVertical);
 			this.gboxMirror.Controls.Add(this.buttonMirrorHorizontal);
 			this.gboxMirror.Location = new System.Drawing.Point(3, 216);
@@ -404,7 +425,7 @@
 			// 
 			// buttonMirrorVertical
 			// 
-			this.buttonMirrorVertical.Image = ((System.Drawing.Image)(resources.GetObject("buttonMirrorVertical.Image")));
+			this.buttonMirrorVertical.Image = global::LandscapeGenerator.Properties.Resources.fatcow_flip_vertical;
 			this.buttonMirrorVertical.Location = new System.Drawing.Point(7, 50);
 			this.buttonMirrorVertical.Name = "buttonMirrorVertical";
 			this.buttonMirrorVertical.Size = new System.Drawing.Size(87, 23);
@@ -418,7 +439,7 @@
 			// 
 			// buttonMirrorHorizontal
 			// 
-			this.buttonMirrorHorizontal.Image = ((System.Drawing.Image)(resources.GetObject("buttonMirrorHorizontal.Image")));
+			this.buttonMirrorHorizontal.Image = global::LandscapeGenerator.Properties.Resources.fatcow_flip_horizontal;
 			this.buttonMirrorHorizontal.Location = new System.Drawing.Point(7, 20);
 			this.buttonMirrorHorizontal.Name = "buttonMirrorHorizontal";
 			this.buttonMirrorHorizontal.Size = new System.Drawing.Size(87, 23);
@@ -432,6 +453,7 @@
 			// 
 			// gboxRotation
 			// 
+			this.gboxRotation.BackColor = System.Drawing.Color.Transparent;
 			this.gboxRotation.Controls.Add(this.buttonRotateRight90);
 			this.gboxRotation.Controls.Add(this.buttonRotateLeft90);
 			this.gboxRotation.Location = new System.Drawing.Point(109, 93);
@@ -444,7 +466,7 @@
 			// 
 			// buttonRotateRight90
 			// 
-			this.buttonRotateRight90.Image = ((System.Drawing.Image)(resources.GetObject("buttonRotateRight90.Image")));
+			this.buttonRotateRight90.Image = global::LandscapeGenerator.Properties.Resources.fatcow_rotate_right;
 			this.buttonRotateRight90.Location = new System.Drawing.Point(7, 50);
 			this.buttonRotateRight90.Name = "buttonRotateRight90";
 			this.buttonRotateRight90.Size = new System.Drawing.Size(117, 23);
@@ -458,7 +480,7 @@
 			// 
 			// buttonRotateLeft90
 			// 
-			this.buttonRotateLeft90.Image = ((System.Drawing.Image)(resources.GetObject("buttonRotateLeft90.Image")));
+			this.buttonRotateLeft90.Image = global::LandscapeGenerator.Properties.Resources.fatcow_rotate_left;
 			this.buttonRotateLeft90.Location = new System.Drawing.Point(7, 20);
 			this.buttonRotateLeft90.Name = "buttonRotateLeft90";
 			this.buttonRotateLeft90.Size = new System.Drawing.Size(117, 23);
@@ -473,7 +495,7 @@
 			// buttonCancel
 			// 
 			this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.buttonCancel.Image = ((System.Drawing.Image)(resources.GetObject("buttonCancel.Image")));
+			this.buttonCancel.Image = global::LandscapeGenerator.Properties.Resources.fatcow_cross;
 			this.buttonCancel.Location = new System.Drawing.Point(188, 391);
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(81, 23);
@@ -488,7 +510,7 @@
 			// buttonOK
 			// 
 			this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.buttonOK.Image = ((System.Drawing.Image)(resources.GetObject("buttonOK.Image")));
+			this.buttonOK.Image = global::LandscapeGenerator.Properties.Resources.fatcow_tick;
 			this.buttonOK.Location = new System.Drawing.Point(107, 391);
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
@@ -500,26 +522,12 @@
 			this.buttonOK.UseVisualStyleBackColor = true;
 			this.buttonOK.Click += new System.EventHandler(this.ButtonOK_Click);
 			// 
-			// buttonViewTerrainFull
-			// 
-			this.buttonViewTerrainFull.Image = ((System.Drawing.Image)(resources.GetObject("buttonViewTerrainFull.Image")));
-			this.buttonViewTerrainFull.Location = new System.Drawing.Point(254, 143);
-			this.buttonViewTerrainFull.Name = "buttonViewTerrainFull";
-			this.buttonViewTerrainFull.Size = new System.Drawing.Size(108, 26);
-			this.buttonViewTerrainFull.TabIndex = 11;
-			this.buttonViewTerrainFull.Text = "Gesam&tansicht";
-			this.buttonViewTerrainFull.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.buttonViewTerrainFull.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonViewTerrainFull, "Öffnen der Gesamtansicht als Fenster");
-			this.buttonViewTerrainFull.UseVisualStyleBackColor = true;
-			this.buttonViewTerrainFull.Click += new System.EventHandler(this.ButtonViewTerrainFull_Click);
-			// 
 			// buttonSmooth
 			// 
-			this.buttonSmooth.Image = ((System.Drawing.Image)(resources.GetObject("buttonSmooth.Image")));
+			this.buttonSmooth.Image = global::LandscapeGenerator.Properties.Resources.fatcow_shading;
 			this.buttonSmooth.Location = new System.Drawing.Point(127, 319);
 			this.buttonSmooth.Name = "buttonSmooth";
-			this.buttonSmooth.Size = new System.Drawing.Size(75, 23);
+			this.buttonSmooth.Size = new System.Drawing.Size(93, 23);
 			this.buttonSmooth.TabIndex = 9;
 			this.buttonSmooth.Text = "&Glätten";
 			this.buttonSmooth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -530,10 +538,10 @@
 			// 
 			// buttonInvert
 			// 
-			this.buttonInvert.Image = ((System.Drawing.Image)(resources.GetObject("buttonInvert.Image")));
+			this.buttonInvert.Image = global::LandscapeGenerator.Properties.Resources.fatcow_contrast;
 			this.buttonInvert.Location = new System.Drawing.Point(10, 319);
 			this.buttonInvert.Name = "buttonInvert";
-			this.buttonInvert.Size = new System.Drawing.Size(83, 23);
+			this.buttonInvert.Size = new System.Drawing.Size(87, 23);
 			this.buttonInvert.TabIndex = 8;
 			this.buttonInvert.Text = "&Invertieren";
 			this.buttonInvert.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -594,7 +602,6 @@
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.labelTerrainName);
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.buttonCancel);
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.buttonOK);
-			this.toolStripContainer1.ContentPanel.Controls.Add(this.buttonViewTerrainFull);
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.buttonSmooth);
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.buttonInvert);
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.gboxShiftTerrain);
@@ -606,7 +613,7 @@
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.gboxCanyonize);
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.gboxMirror);
 			this.toolStripContainer1.ContentPanel.Controls.Add(this.gboxRotation);
-			this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(386, 394);
+			this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(386, 419);
 			this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
 			this.toolStripContainer1.Name = "toolStripContainer1";

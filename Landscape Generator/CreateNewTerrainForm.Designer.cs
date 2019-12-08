@@ -29,7 +29,6 @@
     private void InitializeComponent()
     {
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateNewTerrainForm));
 			this.rbtnStartValueRandom = new System.Windows.Forms.RadioButton();
 			this.labelTerrainName = new System.Windows.Forms.Label();
 			this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
@@ -62,8 +61,8 @@
 			this.buttonCancel = new System.Windows.Forms.Button();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
-			this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
 			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
 			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
 			this.gboxStartValue.SuspendLayout();
 			this.gboxGenerateTerrain.SuspendLayout();
@@ -152,7 +151,7 @@
 			// buttonOK
 			// 
 			this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.buttonOK.Image = ((System.Drawing.Image)(resources.GetObject("buttonOK.Image")));
+			this.buttonOK.Image = global::LandscapeGenerator.Properties.Resources.fatcow_tick;
 			this.buttonOK.Location = new System.Drawing.Point(130, 376);
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new System.Drawing.Size(75, 23);
@@ -166,7 +165,7 @@
 			// 
 			// buttonCreateTerrain
 			// 
-			this.buttonCreateTerrain.Image = ((System.Drawing.Image)(resources.GetObject("buttonCreateTerrain.Image")));
+			this.buttonCreateTerrain.Image = global::LandscapeGenerator.Properties.Resources.fatcow_cog;
 			this.buttonCreateTerrain.Location = new System.Drawing.Point(21, 376);
 			this.buttonCreateTerrain.Name = "buttonCreateTerrain";
 			this.buttonCreateTerrain.Size = new System.Drawing.Size(75, 23);
@@ -180,7 +179,7 @@
 			// 
 			// buttonViewTerrainPreview
 			// 
-			this.buttonViewTerrainPreview.Image = ((System.Drawing.Image)(resources.GetObject("buttonViewTerrainPreview.Image")));
+			this.buttonViewTerrainPreview.Image = global::LandscapeGenerator.Properties.Resources.fatcow_image;
 			this.buttonViewTerrainPreview.Location = new System.Drawing.Point(238, 334);
 			this.buttonViewTerrainPreview.Name = "buttonViewTerrainPreview";
 			this.buttonViewTerrainPreview.Size = new System.Drawing.Size(81, 26);
@@ -385,7 +384,7 @@
 			// buttonCancel
 			// 
 			this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.buttonCancel.Image = ((System.Drawing.Image)(resources.GetObject("buttonCancel.Image")));
+			this.buttonCancel.Image = global::LandscapeGenerator.Properties.Resources.fatcow_cross;
 			this.buttonCancel.Location = new System.Drawing.Point(238, 376);
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new System.Drawing.Size(81, 23);
@@ -409,6 +408,12 @@
 			this.statusStrip.Size = new System.Drawing.Size(350, 22);
 			this.statusStrip.TabIndex = 13;
 			this.statusStrip.Text = "statusStrip";
+			// 
+			// toolStripStatusLabel
+			// 
+			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+			this.toolStripStatusLabel.Size = new System.Drawing.Size(104, 17);
+			this.toolStripStatusLabel.Text = "infoformation text";
 			// 
 			// toolStripContainer1
 			// 
@@ -440,12 +445,6 @@
 			this.toolStripContainer1.Size = new System.Drawing.Size(350, 433);
 			this.toolStripContainer1.TabIndex = 14;
 			this.toolStripContainer1.Text = "toolStripContainer1";
-			// 
-			// toolStripStatusLabel
-			// 
-			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-			this.toolStripStatusLabel.Size = new System.Drawing.Size(104, 17);
-			this.toolStripStatusLabel.Text = "infoformation text";
 			// 
 			// CreateNewTerrainForm
 			// 
