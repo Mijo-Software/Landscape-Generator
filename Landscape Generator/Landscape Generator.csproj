@@ -113,11 +113,11 @@
     <Compile Include="AboutBoxForm.designer.cs">
       <DependentUpon>AboutBoxForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AppForm.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AppForm.Designer.cs">
-      <DependentUpon>AppForm.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="CreateNewTerrainForm.cs">
@@ -142,8 +142,8 @@
     <EmbeddedResource Include="AboutBoxForm.resx">
       <DependentUpon>AboutBoxForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppForm.resx">
-      <DependentUpon>AppForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateNewTerrainForm.resx">
@@ -345,6 +345,81 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LscGen.ico" />
+    <None Include="Resources\silk_arrow_increase.png" />
+    <None Include="Resources\silk_arrow_decrease.png" />
+    <None Include="Resources\fugue_arrow_increase.png" />
+    <None Include="Resources\fugue_arrow_decrease.png" />
+    <None Include="Resources\fatcow_arrow_increase.png" />
+    <None Include="Resources\fatcow_arrow_decrease.png" />
+    <None Include="Resources\silk_shading.png" />
+    <None Include="Resources\silk_rotate_right.png" />
+    <None Include="Resources\silk_rotate_left.png" />
+    <None Include="Resources\silk_flip_vertical.png" />
+    <None Include="Resources\silk_flip_horizontal.png" />
+    <None Include="Resources\fugue_shading.png" />
+    <None Include="Resources\fugue_rotate_right.png" />
+    <None Include="Resources\fugue_rotate_left.png" />
+    <None Include="Resources\fugue_flip_vertical.png" />
+    <None Include="Resources\fugue_flip_horizontal.png" />
+    <None Include="Resources\fatcow_shading.png" />
+    <None Include="Resources\fatcow_rotate_right.png" />
+    <None Include="Resources\fatcow_rotate_left.png" />
+    <None Include="Resources\fatcow_flip_vertical.png" />
+    <None Include="Resources\fatcow_flip_horizontal.png" />
+    <None Include="Resources\silk_palette.png" />
+    <None Include="Resources\fugue_palette.png" />
+    <None Include="Resources\fatcow_palette.png" />
+    <None Include="Resources\silk_arrow_up.png" />
+    <None Include="Resources\silk_arrow_undo.png" />
+    <None Include="Resources\silk_arrow_switch.png" />
+    <None Include="Resources\silk_arrow_sw.png" />
+    <None Include="Resources\silk_arrow_se.png" />
+    <None Include="Resources\silk_arrow_right.png" />
+    <None Include="Resources\silk_arrow_refresh.png" />
+    <None Include="Resources\silk_arrow_redo.png" />
+    <None Include="Resources\silk_arrow_out.png" />
+    <None Include="Resources\silk_arrow_nw.png" />
+    <None Include="Resources\silk_arrow_ne.png" />
+    <None Include="Resources\silk_arrow_left.png" />
+    <None Include="Resources\silk_arrow_inout.png" />
+    <None Include="Resources\silk_arrow_in.png" />
+    <None Include="Resources\silk_arrow_down.png" />
+    <None Include="Resources\fugue_arrow_up.png" />
+    <None Include="Resources\fugue_arrow_undo.png" />
+    <None Include="Resources\fugue_arrow_switch.png" />
+    <None Include="Resources\fugue_arrow_sw.png" />
+    <None Include="Resources\fugue_arrow_se.png" />
+    <None Include="Resources\fugue_arrow_right.png" />
+    <None Include="Resources\fugue_arrow_refresh.png" />
+    <None Include="Resources\fugue_arrow_redo.png" />
+    <None Include="Resources\fugue_arrow_out.png" />
+    <None Include="Resources\fugue_arrow_nw.png" />
+    <None Include="Resources\fugue_arrow_ne.png" />
+    <None Include="Resources\fugue_arrow_left.png" />
+    <None Include="Resources\fugue_arrow_inout.png" />
+    <None Include="Resources\fugue_arrow_in.png" />
+    <None Include="Resources\fugue_arrow_down.png" />
+    <None Include="Resources\fatcow_arrow_up.png" />
+    <None Include="Resources\fatcow_arrow_undo.png" />
+    <None Include="Resources\fatcow_arrow_switch.png" />
+    <None Include="Resources\fatcow_arrow_sw.png" />
+    <None Include="Resources\fatcow_arrow_se.png" />
+    <None Include="Resources\fatcow_arrow_right.png" />
+    <None Include="Resources\fatcow_arrow_refresh.png" />
+    <None Include="Resources\fatcow_arrow_redo.png" />
+    <None Include="Resources\fatcow_arrow_out.png" />
+    <None Include="Resources\fatcow_arrow_nw.png" />
+    <None Include="Resources\fatcow_arrow_ne.png" />
+    <None Include="Resources\fatcow_arrow_left.png" />
+    <None Include="Resources\fatcow_arrow_inout.png" />
+    <None Include="Resources\fatcow_arrow_in.png" />
+    <None Include="Resources\fatcow_arrow_down.png" />
+    <None Include="Resources\silk_contrast.png" />
+    <None Include="Resources\silk_cog.png" />
+    <None Include="Resources\fugue_contrast.png" />
+    <None Include="Resources\fugue_cog.png" />
+    <None Include="Resources\fatcow_contrast.png" />
+    <None Include="Resources\fatcow_cog.png" />
     <None Include="Resources\silk_tick.png" />
     <None Include="Resources\fugue_tick.png" />
     <None Include="Resources\fatcow_tick.png" />
